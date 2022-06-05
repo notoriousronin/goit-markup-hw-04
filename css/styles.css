@@ -365,8 +365,11 @@ ul {
   align-items: center;
   text-align: center;
   letter-spacing: 0.06em;
+
   color: var(--hero-text-color);
   background-color: var(--accent-color);
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+
   cursor: pointer;
   border-radius: 4px;
   padding: 10px 32px;
