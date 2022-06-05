@@ -217,9 +217,21 @@ ul {
 .hero {
   background-color: var(--second-bg-color);
   text-align: center;
-
   padding: 200px 0;
 }
+
+
+.overlay {
+  max-width: 1600px;
+  min-height: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-bg.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
 
 .hero-title {
   color: var(--hero-text-color);
@@ -348,6 +360,7 @@ ul {
   border-left: 1px solid #eeeeee;
   border-right: 1px solid #eeeeee;
   border-bottom: 1px solid #eeeeee;
+  
 }
 
 .description {
