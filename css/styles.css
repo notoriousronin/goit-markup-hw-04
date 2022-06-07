@@ -14,7 +14,7 @@ html {
 }
 
 /* General */
-hover body {
+body {
   color: var(--primary-text-color);
   font-family: Roboto, sans-serif;
   font-size: 14px;
@@ -125,6 +125,7 @@ h4,
 h5,
 h6 {
   margin: 0;
+  padding: 0;
 }
 
 ul {
@@ -254,9 +255,25 @@ ul {
   height: 120px;
   background-color: var(--third-bg-color);
   border-radius: 4px;
+  align-items: center;
+  justify-content: center;
 }
 
-.svg-icon {
+.svg-mail {
+  width: 16px;
+  height: 12px;
+  margin-right: 10px;
+  align-items: center;
+}
+
+.svg-phone {
+  width: 10px;
+  height: 16px;
+  margin-right: 10px;
+  align-items: center;
+}
+
+.svg-main {
   width: 70px;
   height: 70px;
 }
