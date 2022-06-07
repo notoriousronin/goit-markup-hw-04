@@ -14,8 +14,7 @@ html {
 }
 
 /* General */
-
-body {
+hover body {
   color: var(--primary-text-color);
   font-family: Roboto, sans-serif;
   font-size: 14px;
@@ -47,6 +46,8 @@ img {
 
 .button:hover,
 .button:focus {
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
   background-color: var(--accent-color);
   color: var(--header-bg-color);
 }
@@ -141,14 +142,17 @@ ul {
 .images-container {
   display: flex;
   flex-wrap: wrap;
-  
 }
 
 .images-item {
   width: calc((100% - 60px) / 3);
   margin-right: 30px;
   margin-bottom: 30px;
-  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+
+.images-item:hover {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 .images-item:nth-child(3n) {
@@ -220,18 +224,17 @@ ul {
   padding: 200px 0;
 }
 
-
 .overlay {
   max-width: 1600px;
   min-height: 600px;
   margin-left: auto;
   margin-right: auto;
-  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-bg.jpg);
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+    url(../images/hero-bg.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 }
-
 
 .hero-title {
   color: var(--hero-text-color);
@@ -239,9 +242,23 @@ ul {
 }
 
 /* Features */
+
 .features-list .title,
 .title {
   color: var(--title-text-color);
+}
+
+.features-thumb {
+  display: flex;
+  margin-bottom: 30px;
+  height: 120px;
+  background-color: var(--third-bg-color);
+  border-radius: 4px;
+}
+
+.svg-icon {
+  width: 70px;
+  height: 70px;
 }
 
 .features-list {
@@ -348,7 +365,8 @@ ul {
 .teammate {
   width: calc((100%-90) / 4);
   background-color: #ffffff;
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
 }
 
 .teammate:not(:last-child) {
@@ -360,7 +378,6 @@ ul {
   border-left: 1px solid #eeeeee;
   border-right: 1px solid #eeeeee;
   border-bottom: 1px solid #eeeeee;
-  
 }
 
 .description {
@@ -381,7 +398,7 @@ ul {
 
   color: var(--hero-text-color);
   background-color: var(--accent-color);
-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 
   cursor: pointer;
   border-radius: 4px;
@@ -397,8 +414,7 @@ box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 .portfolio-main {
   background-color: var(--header-bg-color);
   padding-top: 94px;
-    padding-bottom: 94px;
-}
+  padding-bottom: 94px;
 }
 
 .button-list {
@@ -427,7 +443,6 @@ box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   margin-left: 8px;
 }
 
-
 .button-list {
   display: flex;
   justify-content: center;
@@ -436,7 +451,7 @@ box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 
 .tech-title {
   margin-bottom: 4px;
-  
+
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
@@ -452,8 +467,6 @@ box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   letter-spacing: 0.03em;
   color: var(--primary-text-color);
 }
-
-
 
 /* Footer */
 .studio-footer {
